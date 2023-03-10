@@ -1,0 +1,7 @@
+---
+- hosts: wingroup1
+  gather_facts: true
+  tasks: 
+    - name: debug
+      debug:
+        msg: Hello

@@ -1,0 +1,10 @@
+# Ansible connection info
+ansible_connection: winrm
+ansible_winrm_transport: kerberos
+ansible_port: 5985
+ansible_user: "{{ lookup('env','admin_user') }}"
+ansible_password: "{{ lookup('env','admin_pwd') }}"
+ansible_become: true
+ansible_become_method: runas
+ansible_become_user: "{{ lookup('env','admin_user') }}"
+ansible_become_password: "{{ lookup('env','admin_pwd') }}"
